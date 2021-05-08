@@ -229,6 +229,18 @@
 // pow (3,3);
 
 
-const str = "test";
+// const str = "test";
 
-console.log(str[1]);
+// console.log(str.toUpperCase());
+// console.log(str)
+
+// let fruit = "fuck you";
+
+// console.log(fruit.substring()) 
+
+const p = "12.2px";
+
+console.log(parseInt(p));
+console.log(parseFloat(p));
+
+//24234213423412342
