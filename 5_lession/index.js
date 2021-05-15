@@ -238,9 +238,41 @@
 
 // console.log(fruit.substring()) 
 
-const p = "12.2px";
+// const p = "12.2px";
 
-console.log(parseInt(p));
-console.log(parseFloat(p));
+// console.log(parseInt(p));
+// console.log(parseFloat(p));
 
-//24234213423412342
+// //24234213423412342
+
+//КЛАССЫ
+class People {
+    constructor (options) {
+        this.name = options.name;
+        this.surname = options.surname;
+    }
+    getFullName() {
+        return this.name + ' ' + this.surname;
+    }
+}
+
+class Worker extends People {
+    constructor(options) {
+        super(options);
+        this.rate = options.rate;
+        this.day = options.day
+    }
+    getSalary() {
+        return this.rate * this.day;
+    }
+}
+
+const worker_1 = new Worker ({
+    name: "Ivan",
+    surname: "Ivanov",
+    rate: 50,
+    day: 100,
+});
+console.log(worker_1);
+console.log(worker_1.getSalary());
+console.log(worker_1.getFullName());
